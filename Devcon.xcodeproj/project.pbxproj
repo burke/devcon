@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82A20AFE153F735A00DBC263 /* devcon5.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A20AFD153F735A00DBC263 /* devcon5.png */; };
+		82A20B03153F74C100DBC263 /* devcon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A20AFF153F74C100DBC263 /* devcon1.png */; };
+		82A20B04153F74C100DBC263 /* devcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A20B00153F74C100DBC263 /* devcon2.png */; };
+		82A20B05153F74C100DBC263 /* devcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A20B01153F74C100DBC263 /* devcon3.png */; };
+		82A20B06153F74C100DBC263 /* devcon4.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A20B02153F74C100DBC263 /* devcon4.png */; };
 		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 		DD4F7C1513C30F9F00825C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1413C30F9F00825C6E /* main.m */; };
 		DD4F7C1C13C30F9F00825C6E /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1B13C30F9F00825C6E /* ApplicationDelegate.m */; };
 		DD4F7C1F13C30F9F00825C6E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4F7C1D13C30F9F00825C6E /* MainMenu.xib */; };
 		DD4F7C3813C317A500825C6E /* MenubarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C3713C317A500825C6E /* MenubarController.m */; };
 		DD4F7C3C13C3180800825C6E /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C3B13C3180800825C6E /* StatusItemView.m */; };
-		DD4F7C3F13C318D600825C6E /* PanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C3E13C318D600825C6E /* PanelController.m */; };
-		DD4F7C4113C31B4A00825C6E /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4F7C4013C31B4A00825C6E /* Panel.xib */; };
-		DD4F7C4413C31BD200825C6E /* Panel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C4313C31BD200825C6E /* Panel.m */; };
 		DD4F7C4713C3208500825C6E /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C4613C3208500825C6E /* BackgroundView.m */; };
-		DD4F7C4B13C322FA00825C6E /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4F7C4913C322FA00825C6E /* Status.png */; };
-		DD4F7C4C13C322FA00825C6E /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4F7C4A13C322FA00825C6E /* StatusHighlighted.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82A20AFD153F735A00DBC263 /* devcon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devcon5.png; path = Devcon/devcon5.png; sourceTree = "<group>"; };
+		82A20AFF153F74C100DBC263 /* devcon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devcon1.png; path = Devcon/devcon1.png; sourceTree = "<group>"; };
+		82A20B00153F74C100DBC263 /* devcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devcon2.png; path = Devcon/devcon2.png; sourceTree = "<group>"; };
+		82A20B01153F74C100DBC263 /* devcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devcon3.png; path = Devcon/devcon3.png; sourceTree = "<group>"; };
+		82A20B02153F74C100DBC263 /* devcon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devcon4.png; path = Devcon/devcon4.png; sourceTree = "<group>"; };
 		DD4F7C0413C30F9F00825C6E /* Devcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD4F7C0B13C30F9F00825C6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -37,15 +42,8 @@
 		DD4F7C3713C317A500825C6E /* MenubarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenubarController.m; sourceTree = "<group>"; };
 		DD4F7C3A13C3180800825C6E /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
 		DD4F7C3B13C3180800825C6E /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
-		DD4F7C3D13C318D600825C6E /* PanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelController.h; sourceTree = "<group>"; };
-		DD4F7C3E13C318D600825C6E /* PanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelController.m; sourceTree = "<group>"; };
-		DD4F7C4013C31B4A00825C6E /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Panel.xib; path = Devcon/Panel.xib; sourceTree = "<group>"; };
-		DD4F7C4213C31BD200825C6E /* Panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Panel.h; sourceTree = "<group>"; };
-		DD4F7C4313C31BD200825C6E /* Panel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Panel.m; sourceTree = "<group>"; };
 		DD4F7C4513C3208500825C6E /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
 		DD4F7C4613C3208500825C6E /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
-		DD4F7C4913C322FA00825C6E /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Status.png; path = Devcon/Status.png; sourceTree = "<group>"; };
-		DD4F7C4A13C322FA00825C6E /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StatusHighlighted.png; path = Devcon/StatusHighlighted.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +115,6 @@
 				DD4F7C1B13C30F9F00825C6E /* ApplicationDelegate.m */,
 				DD4F7C3613C317A500825C6E /* MenubarController.h */,
 				DD4F7C3713C317A500825C6E /* MenubarController.m */,
-				DD4F7C3D13C318D600825C6E /* PanelController.h */,
-				DD4F7C3E13C318D600825C6E /* PanelController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -136,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				DD4F7C1D13C30F9F00825C6E /* MainMenu.xib */,
-				DD4F7C4013C31B4A00825C6E /* Panel.xib */,
 			);
 			name = XIBs;
 			sourceTree = "<group>";
@@ -144,8 +139,6 @@
 		DD4F7C3913C317EC00825C6E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DD4F7C4213C31BD200825C6E /* Panel.h */,
-				DD4F7C4313C31BD200825C6E /* Panel.m */,
 				DD4F7C3A13C3180800825C6E /* StatusItemView.h */,
 				DD4F7C3B13C3180800825C6E /* StatusItemView.m */,
 				DD4F7C4513C3208500825C6E /* BackgroundView.h */,
@@ -157,8 +150,11 @@
 		DD4F7C4813C322D800825C6E /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				DD4F7C4913C322FA00825C6E /* Status.png */,
-				DD4F7C4A13C322FA00825C6E /* StatusHighlighted.png */,
+				82A20AFD153F735A00DBC263 /* devcon5.png */,
+				82A20AFF153F74C100DBC263 /* devcon1.png */,
+				82A20B00153F74C100DBC263 /* devcon2.png */,
+				82A20B01153F74C100DBC263 /* devcon3.png */,
+				82A20B02153F74C100DBC263 /* devcon4.png */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -188,6 +184,9 @@
 /* Begin PBXProject section */
 		DD4F7BFB13C30F9F00825C6E /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
 			buildConfigurationList = DD4F7BFE13C30F9F00825C6E /* Build configuration list for PBXProject "Devcon" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -211,9 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD4F7C1F13C30F9F00825C6E /* MainMenu.xib in Resources */,
-				DD4F7C4113C31B4A00825C6E /* Panel.xib in Resources */,
-				DD4F7C4B13C322FA00825C6E /* Status.png in Resources */,
-				DD4F7C4C13C322FA00825C6E /* StatusHighlighted.png in Resources */,
+				82A20AFE153F735A00DBC263 /* devcon5.png in Resources */,
+				82A20B03153F74C100DBC263 /* devcon1.png in Resources */,
+				82A20B04153F74C100DBC263 /* devcon2.png in Resources */,
+				82A20B05153F74C100DBC263 /* devcon3.png in Resources */,
+				82A20B06153F74C100DBC263 /* devcon4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,8 +229,6 @@
 				DD4F7C1C13C30F9F00825C6E /* ApplicationDelegate.m in Sources */,
 				DD4F7C3813C317A500825C6E /* MenubarController.m in Sources */,
 				DD4F7C3C13C3180800825C6E /* StatusItemView.m in Sources */,
-				DD4F7C3F13C318D600825C6E /* PanelController.m in Sources */,
-				DD4F7C4413C31BD200825C6E /* Panel.m in Sources */,
 				DD4F7C4713C3208500825C6E /* BackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

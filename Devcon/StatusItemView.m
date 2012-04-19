@@ -1,11 +1,10 @@
 #import "StatusItemView.h"
+#include <stdlib.h>
 
 @implementation StatusItemView
 
 @synthesize statusItem = _statusItem;
 @synthesize image = _image;
-@synthesize alternateImage = _alternateImage;
-@synthesize isHighlighted = _isHighlighted;
 @synthesize action = _action;
 @synthesize target = _target;
 
@@ -22,17 +21,35 @@
         _statusItem = statusItem;
         _statusItem.view = self;
     }
+
+    NSThread* myThread = [[NSThread alloc] initWithTarget:self
+                                                 selector:@selector(pollService)
+                                                   object:nil];
+    [myThread start];  // Actually create the thread
+
     return self;
 }
 
+- (void)pollService
+{
+    while (true) {
+        [self updateLevel];
+        [NSThread sleepForTimeInterval:30];
+    }
+}
 
 #pragma mark -
 
+- (void)updateLevel
+{
+    [self setLevel:4];
+}
+
 - (void)drawRect:(NSRect)dirtyRect
 {
-	[self.statusItem drawStatusBarBackgroundInRect:dirtyRect withHighlight:self.isHighlighted];
+	[self.statusItem drawStatusBarBackgroundInRect:dirtyRect withHighlight:false];
     
-    NSImage *icon = self.isHighlighted ? self.alternateImage : self.image;
+    NSImage *icon = self.image;
     NSSize iconSize = [icon size];
     NSRect bounds = self.bounds;
     CGFloat iconX = roundf((NSWidth(bounds) - iconSize.width) / 2);
@@ -52,32 +69,19 @@
 #pragma mark -
 #pragma mark Accessors
 
-- (void)setHighlighted:(BOOL)newFlag
-{
-    if (_isHighlighted == newFlag) return;
-    _isHighlighted = newFlag;
-    [self setNeedsDisplay:YES];
-}
-
 #pragma mark -
-
-- (void)setImage:(NSImage *)newImage
+-(void)setLevel:(int)level
 {
-    if (_image != newImage) {
-        _image = newImage;
-        [self setNeedsDisplay:YES];
-    }
-}
-
-- (void)setAlternateImage:(NSImage *)newImage
-{
-    if (_alternateImage != newImage) {
-        _alternateImage = newImage;
-        if (self.isHighlighted) {
+    if (level >= 1 && level <= 5) {
+        NSString *imageName = [NSString stringWithFormat:@"devcon%d", level];
+        NSImage *newImage = [NSImage imageNamed:imageName];
+        if (_image != newImage) {
+            _image = newImage;
             [self setNeedsDisplay:YES];
         }
     }
 }
+
 
 #pragma mark -
 
